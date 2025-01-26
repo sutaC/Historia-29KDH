@@ -27,7 +27,8 @@ h2 {
     text-shadow: 0.125em 0.125em 0.125em #00000033;
 }
 
-main {
+main,
+section {
     padding: 1rem;
 }
 
@@ -71,7 +72,6 @@ ul.history li {
 }
 
 ul.history li:hover {
-    opacity: 0.95;
     translate: 0 -2px;
 }
 
@@ -104,4 +104,35 @@ ul.history li .date {
 ul.history li .desc {
     flex: 75%;
     padding-left: 0.5rem;
+}
+
+ul.trivia {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+ul.trivia li {
+    display: block;
+    border: 1px dotted var(--clr-text);
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.25em 0.25em 0.25em #00000033;
+    max-width: 50ch;
+    align-content: center;
+}
+
+footer {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+    border-top: 1px dashed var(--clr-primary);
+}
+
+footer p {
+    margin: 0.25rem;
 }

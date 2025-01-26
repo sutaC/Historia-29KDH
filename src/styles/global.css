@@ -27,3 +27,14 @@ body {
     min-height: 100vh;
     background-color: var(--clr-background);
 }
+
+a {
+    display: inline-block;
+    color: var(--clr-accent);
+    transition: all 100ms ease-out;
+}
+
+a:hover {
+    translate: 0 -1px;
+    opacity: 0.95;
+}
