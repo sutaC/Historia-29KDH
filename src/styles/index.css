@@ -125,6 +125,23 @@ ul.trivia li {
     align-content: center;
 }
 
+ul.bibliography {
+    text-align: center;
+}
+
+ul.bibliography li {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 50ch;
+    word-break: break-all;
+    text-wrap: balance;
+}
+
+ul.bibliography li a {
+    width: 100%;
+}
+
 footer {
     width: 100%;
     padding: 0.5rem;
