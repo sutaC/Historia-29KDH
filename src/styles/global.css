@@ -8,14 +8,22 @@
     --clr-primary: #64a43a;
     --clr-secondary: #7db9ec;
     --clr-accent: #635ee8;
+
+    --clr-milestone: #f0526a;
+    --clr-leader: #52a6f0;
+    --clr-assistant: #81f052;
+    --clr-event: #f0ce52;
+    --clr-other: #e0fef0;
 }
 
 html {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
+    color: var(--clr-text);
 }
 
 body {
     margin: 0;
     min-height: 100vh;
+    background-color: var(--clr-background);
 }
