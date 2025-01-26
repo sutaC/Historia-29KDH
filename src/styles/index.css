@@ -36,6 +36,49 @@ ul {
     padding: 0;
 }
 
+.filter {
+    padding: 0.5rem;
+    border: 1px dashed var(--clr-secondary);
+    border-width: 1px 0;
+    margin: auto;
+    max-width: 30rem;
+}
+
+.filter summary {
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.filter .fields {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter .field {
+    border: 1px dotted var(--clr-text);
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    accent-color: var(--clr-secondary);
+    cursor: pointer;
+    transition: all 100ms ease-out;
+}
+
+.filter .field:hover {
+    translate: 0 -1px;
+}
+
+.filter .field * {
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter .field:has(input:checked) {
+    background-color: var(--clr-secondary);
+}
+
 ul.history {
     position: relative;
 }

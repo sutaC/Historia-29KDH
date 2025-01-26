@@ -21,6 +21,8 @@
 
         <link rel="stylesheet" href="./styles/global.css" />
         <link rel="stylesheet" href="./styles/index.css" />
+
+        <script src="./scripts/index.js" defer></script>
     </head>
     <body>
         <header>
@@ -33,6 +35,58 @@
 
         <main>
             <h1>Plan wydarzeń</h1>
+
+            <details class="filter">
+                <summary>Filtry:</summary>
+
+                <div class="fields">
+                    <div class="field">
+                        <label for="chMilestone">Ważne wydarzenia</label>
+                        <input
+                            type="checkbox"
+                            name="milestone"
+                            id="chMilestone"
+                            checked
+                        />
+                    </div>
+                    <div class="field">
+                        <label for="chLeader">Drużynowi</label>
+                        <input
+                            type="checkbox"
+                            name="leader"
+                            id="chLeader"
+                            checked
+                        />
+                    </div>
+                    <div class="field">
+                        <label for="chAssistant">Przyboczni</label>
+                        <input
+                            type="checkbox"
+                            name="assistant"
+                            id="chAssistant"
+                            checked
+                        />
+                    </div>
+                    <div class="field">
+                        <label for="chEvent">Wydarzenia</label>
+                        <input
+                            type="checkbox"
+                            name="event"
+                            id="chEvent"
+                            checked
+                        />
+                    </div>
+                    <div class="field">
+                        <label for="chOther">Inne</label>
+                        <input
+                            type="checkbox"
+                            name="other"
+                            id="chOther"
+                            checked
+                        />
+                    </div>
+                </div>
+            </details>
 
             <ul class="history">
                 <li class="milestone">
@@ -58,7 +112,7 @@
                     <span class="date">1992 r.</span>
                     <span class="desc">Drużyna rozpada się</span>
                 </li>
-                <li class="leader milestone">
+                <li class="leader">
                     <span class="date">Wrzesień 1993 r.</span>
                     <span class="desc"
                         >Piotr Kucharczyk “Bouli” reaktywuje drużynę</span
